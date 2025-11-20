@@ -13,8 +13,19 @@ To write a Python program that filters out and returns all elements from a list 
    - If **not**, append the word to `l1`.
 5. Print the final filtered list.
 
-## 🧾 Program
-Add code here
-## Output
+## 🧾 Program:
+```
+import re
+l1 = []
+items = ['goal', 'new', 'user', 'sit', 'eat', 'dinner']
+for i in items:
+    if not re.search(r"e", i):
+        l1.append(i)
+print("Words without 'e':", l1)
+```
+## Output:
 
-## Result
+<img width="532" height="161" alt="438590374-fbe52d43-eb10-4615-bd06-3b1dde3da7d2" src="https://github.com/user-attachments/assets/4152b769-35d7-4a58-a2c8-0671ba4c6e94" />
+
+## Result:
+   Thus the program executed successfully.
